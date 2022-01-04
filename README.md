@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `Work To Do`
+
+- [] Un composant RestaurantInfos => Afficher les informations du restaurant
+  - L'adresse va dans un nouveau composant également
+- [] Créer le composant PlatList => Affiche la liste des plats
+- [] Créer le composant PlatListItem => Affiche un item de la liste des plats

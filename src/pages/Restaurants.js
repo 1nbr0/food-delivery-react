@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getRestaurants } from '../services/Api'
+import logo from '../../src/logo.svg'
+import RestaurantList from '../components/RestaurantList'
 
 function Restaurants () {
   const [restaurants, setRestaurants] = useState([])
@@ -16,14 +18,16 @@ function Restaurants () {
 
   if (loading) {
     return (
-      <h1>Chargement ...</h1>
+      <div>
+        <img src={logo} className='App-logo' alt='logo' />
+      </div>
     )
   }
 
   return (
     <div>
       <h1>RESTAURANTS</h1>
-      <pre>{JSON.stringify(restaurants, null, 2)}</pre>
+      <RestaurantList restaurants={restaurants} />
     </div>
   )
 }
