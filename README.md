@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### `Work To Do`
 
-- [ ] Un composant RestaurantInfos => Afficher les informations du restaurant
-  - L'adresse va dans un nouveau composant également
+- [x] Un composant RestaurantInfos => Afficher les informations du restaurant
+  - [x] L'adresse va dans un nouveau composant également
 - [ ] Créer le composant PlatList => Affiche la liste des plats
 - [ ] Créer le composant PlatListItem => Affiche un item de la liste des plats

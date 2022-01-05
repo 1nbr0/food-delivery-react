@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 import { getRestaurantById } from '../services/Api'
 import logo from '../../src/logo.svg'
+import RestaurantInfos from '../components/RestaurantInfos'
+import RestaurantAdresse from '../components/RestaurantAdresse'
 
 function Restaurant () {
   const [restaurant, setRestaurant] = useState(null)
@@ -16,7 +18,7 @@ function Restaurant () {
       setLoading(false)
     }
     getData()
-  }, [])
+  }, [params.id])
 
   if (loading) {
     return (
@@ -27,11 +29,12 @@ function Restaurant () {
   }
 
   return (
-    <div>
-      <pre>{JSON.stringify(restaurant, null, 2)}</pre>
-      <h1>{restaurant.title}</h1>
-      <p>{restaurant.description}</p>
-    </div>
+    restaurant && (
+      <div>
+        <RestaurantInfos restaurant={restaurant} />
+        <RestaurantAdresse adresse={restaurant.adresse} />
+      </div>
+    )
   )
 }
 
