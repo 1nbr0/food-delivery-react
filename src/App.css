@@ -7,8 +7,18 @@
   pointer-events: none;
 }
 
+.App-logo-nav {
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-nav {
     animation: App-logo-spin infinite 3s linear;
   }
 }

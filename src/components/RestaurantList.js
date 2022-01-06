@@ -1,5 +1,6 @@
 import RestaurantListItem from './RestaurantListItem'
 import './styles/RestaurantListStyle.css'
+
 function RestaurantList (props) {
   const { restaurants } = props
   return (

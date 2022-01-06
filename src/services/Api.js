@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://strapi.myidea.fr',
+  baseURL: process.env.REACT_APP_API_URL,
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json'
@@ -27,7 +27,17 @@ const getRestaurantById = async (id) => {
   }
 }
 
+const registerUser = async (userInfos) => {
+  try {
+    const response = await api.post('/auth/local/register', userInfos)
+    return response.data
+  } catch (error) {
+    console.error(error)
+  }
+}
+
 export {
   getRestaurants,
-  getRestaurantById
+  getRestaurantById,
+  registerUser
 }

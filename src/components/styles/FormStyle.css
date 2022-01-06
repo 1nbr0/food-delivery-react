@@ -1,0 +1,25 @@
+.body-form {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.form-style {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px 3px rgb(0 0 0 / 15%);
+  box-shadow: 5px 5px 5px 3px rgb(0 0 0 / 15%);
+}
+
+.form-label {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

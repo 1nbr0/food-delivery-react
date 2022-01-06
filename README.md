@@ -73,5 +73,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - [x] Un composant RestaurantInfos => Afficher les informations du restaurant
   - [x] L'adresse va dans un nouveau composant également
-- [ ] Créer le composant PlatList => Affiche la liste des plats
-- [ ] Créer le composant PlatListItem => Affiche un item de la liste des plats
+- [x] Créer le composant PlatList => Affiche la liste des plats
+- [x] Créer le composant PlatListItem => Affiche un item de la liste des plats

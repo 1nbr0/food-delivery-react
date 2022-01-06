@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { getRestaurantById } from '../services/Api'
 import logo from '../../src/logo.svg'
 import RestaurantInfos from '../components/RestaurantInfos'
-import RestaurantAdresse from '../components/RestaurantAdresse'
+import PlatList from '../components/PlatList'
 
 function Restaurant () {
   const [restaurant, setRestaurant] = useState(null)
@@ -31,8 +31,12 @@ function Restaurant () {
   return (
     restaurant && (
       <div>
-        <RestaurantInfos restaurant={restaurant} />
-        <RestaurantAdresse adresse={restaurant.adresse} />
+        <div>
+          <RestaurantInfos restaurant={restaurant} />
+        </div>
+        <div>
+          <PlatList plats={restaurant.plats} />
+        </div>
       </div>
     )
   )
