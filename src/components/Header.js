@@ -21,6 +21,7 @@ function Header () {
               <Nav.Link href='/'>Home</Nav.Link>
               <Nav.Link href='/restaurants'>Restaurants</Nav.Link>
               <Nav.Link href='/auth'>Authentification</Nav.Link>
+              <Nav.Link href='/counter'>Counter</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
