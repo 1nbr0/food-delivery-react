@@ -7,13 +7,13 @@
   margin-block: 10px;
 }
 
-.card:hover {
+/* .card:hover {
   -moz-transform: scale(1.05);
 -webkit-transform: scale(1.05);
 -o-transform: scale(1.05);
 -ms-transform: scale(1.05);
 transform: scale(1.05);
-}
+} */
 
 .card-img {
   object-fit: cover;

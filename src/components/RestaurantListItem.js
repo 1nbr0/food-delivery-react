@@ -1,10 +1,19 @@
 import { Link } from 'react-router-dom'
 import './styles/RestaurantListItemStyle.css'
+import { gsap } from 'gsap'
 
 function RestaurantListItem (props) {
+  const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, { scale: 1.05 })
+  }
+
+  const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, { scale: 1 })
+  }
+
   const { restaurant } = props
   return (
-    <div className='card'>
+    <div className='card' onMouseEnter={onEnter} onMouseLeave={onLeave}>
       <Link to={`/restaurant/${restaurant._id}`} style={{ textDecoration: 'none', color: 'black' }}>
         <img className='card-img' src={`${process.env.REACT_APP_API_URL}${restaurant.photos[0].url}`} />
         <h1>{restaurant.title}</h1>
